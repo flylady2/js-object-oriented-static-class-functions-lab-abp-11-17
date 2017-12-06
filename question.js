@@ -12,9 +12,7 @@ class Question {
     return this._All;
   }
   static Find(ID) {
-    return this.All().filter(function(question){
-      return question.ID === content;
-    })
+    return this.All()[ID - 1];
   }
 }
 Question._All = [];
